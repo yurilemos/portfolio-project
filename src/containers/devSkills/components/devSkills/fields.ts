@@ -1,0 +1,17 @@
+export const skillList = [
+  "javascript",
+  "typescript",
+  "react",
+  "html",
+  "css",
+  "redux",
+  "python",
+  "c#",
+  "figma",
+  "flask",
+  ".net",
+  "postgresql",
+  "swift",
+  "vue",
+  "angular",
+];
