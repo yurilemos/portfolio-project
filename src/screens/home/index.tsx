@@ -6,6 +6,8 @@ import {
   CardTitleContainer,
 } from "../../containers/introductionCard/components/cardContainer";
 import { Header } from "../../components/header";
+import { WorkContent } from "../../containers/workSection";
+import { ProjectContent } from "../../containers/sideProject";
 
 export const Home = () => {
   return (
@@ -14,6 +16,8 @@ export const Home = () => {
       <CardTitleContainer />
       <DevSkills />
       <CardDescriptionContainer />
+      <ProjectContent />
+      <WorkContent />
     </Content>
   );
 };

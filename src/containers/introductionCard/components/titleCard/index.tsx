@@ -1,10 +1,11 @@
 import React from "react";
-import { OutlinedCard } from "../../../../components/outlinedCard";
+import { Card } from "../../../../components/card";
 import {
   CardContainerTitle,
   LinkContent,
   NameContent,
   CardContainerDescription,
+  LinkedInImg,
 } from "./styles";
 
 interface PropsTitle {
@@ -27,7 +28,7 @@ export const TitleCard = ({
   email,
 }: PropsTitle) => {
   return (
-    <OutlinedCard>
+    <Card>
       <CardContainerTitle>
         <NameContent>
           <h1>{name}</h1>
@@ -39,9 +40,9 @@ export const TitleCard = ({
           <a href={githubLink} target="_blank" rel="noreferrer">
             <img src="images/github-icon.svg" alt="github" />
           </a>
-          <a href={linkedInLink} target="_blank" rel="noreferrer">
+          <LinkedInImg href={linkedInLink} target="_blank" rel="noreferrer">
             <img src="images/linkedIn-icon.svg" alt="linkedIn" />
-          </a>
+          </LinkedInImg>
           <a
             href={`mailto:${email}subject=About the portfolio`}
             target="_blank"
@@ -51,18 +52,18 @@ export const TitleCard = ({
           </a>
         </LinkContent>
       </CardContainerTitle>
-    </OutlinedCard>
+    </Card>
   );
 };
 
 export const DescriptionCard = ({ descriptions }: PropsDescription) => {
   return (
-    <OutlinedCard>
+    <Card>
       <CardContainerDescription>
         {descriptions?.map((description) => (
           <p>{description}</p>
         ))}
       </CardContainerDescription>
-    </OutlinedCard>
+    </Card>
   );
 };

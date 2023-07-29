@@ -3,5 +3,5 @@ import styled from "styled-components";
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 `;

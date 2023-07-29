@@ -45,3 +45,10 @@ export const CardContainerDescription = styled.div`
   gap: 1rem;
   font-size: 1rem;
 `;
+
+export const LinkedInImg = styled.a`
+  background: white;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+`;
