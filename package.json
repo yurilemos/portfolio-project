@@ -1,4 +1,5 @@
 {
+  "homepage": "https://yurilemos.github.io/portfolio-project",
   "name": "portfolio-project",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +25,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",    
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject"
@@ -51,6 +54,7 @@
     "@babel/plugin-transform-runtime": "^7.22.5",
     "@testing-library/react": "^14.0.0",
     "babel-jest": "^29.5.0",
+    "gh-pages": "^5.0.0",
     "jest": "^27.5.1",
     "jsdom": "^22.1.0"
   }
