@@ -24,6 +24,7 @@ export const ProjectContent = ({ id }: { id?: string }) => {
               <AnchorButton
                 href="https://github.com/yurilemos/portfolio-project"
                 variant="outlined"
+                style={{ maxWidth: '156.5px'}}
               >
                 Access the git repository
               </AnchorButton>
