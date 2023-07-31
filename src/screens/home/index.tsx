@@ -1,5 +1,5 @@
 import React from "react";
-import { DevSkills } from "../../containers/devSkills";
+import { Technologies } from "../../containers/technologies";
 import { Content } from "./styles";
 import {
   CardDescriptionContainer,
@@ -14,10 +14,10 @@ export const Home = () => {
     <Content>
       <Header />
       <CardTitleContainer />
-      <DevSkills />
+      <Technologies />
       <CardDescriptionContainer />
-      <ProjectContent />
-      <WorkContent />
+      <ProjectContent id="projects" />
+      <WorkContent id="experience" />      
     </Content>
   );
 };

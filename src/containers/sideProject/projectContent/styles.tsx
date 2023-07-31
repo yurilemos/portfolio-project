@@ -4,17 +4,31 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-top: 2rem;
 
   & > * {
     width: 100%;
-    max-width: 600px;
+  }
+`;
+
+export const CardList = styled.div`
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  & > div {
+    max-width: 465px;
   }
 `;
 
 export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: space-between;
+  height: 100%;
+
+  & > div {
+    max-width: 400px;
+  }
 
   a {
     color: var(--white-color);
@@ -30,16 +44,24 @@ export const CardContent = styled.div`
   }
 `;
 
+export const CardDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+`;
+
 export const ButtonContainer = styled.div`
   display: flex;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
 
-  .button1 {
-    background-color: var(--primary-blue-color);
+  & > * {
+    flex: 1;
   }
-  .button2 {
-    background-color: var(--purple-color);
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
   }
 `;
