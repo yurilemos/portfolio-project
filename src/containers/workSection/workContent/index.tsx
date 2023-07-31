@@ -18,7 +18,7 @@ export const WorkContent = ({ id }: { id?: string }) => {
                 that manages data for the listing of partner companies.
               </p>
             </CardDescription>
-            <a href="https://bee4.com.br/">Check company website</a>
+            <a href="https://bee4.com.br/" target="_blank" rel="noreferrer">Check company website</a>
           </CardContainer>
         </Card>
         <Card hasBorder>
@@ -31,7 +31,7 @@ export const WorkContent = ({ id }: { id?: string }) => {
                 process of generating and managing documents efficiently.
               </p>
             </CardDescription>
-            <a href="https://lawing.com.br/">Check company website</a>
+            <a href="https://lawing.com.br/" target="_blank" rel="noreferrer">Check company website</a>
           </CardContainer>
         </Card>
         <Card hasBorder>
@@ -44,7 +44,7 @@ export const WorkContent = ({ id }: { id?: string }) => {
                 and JavaScript.
               </p>
             </CardDescription>
-            <a href="https://www.parafernalia.net.br/">
+            <a href="https://www.parafernalia.net.br/" target="_blank" rel="noreferrer">
               Check the developed website
             </a>
           </CardContainer>
@@ -60,7 +60,7 @@ export const WorkContent = ({ id }: { id?: string }) => {
                 focusing on different objectives
               </p>
             </CardDescription>
-            <a href="http://ideiaglobo.les.inf.puc-rio.br/">
+            <a href="http://ideiaglobo.les.inf.puc-rio.br/" target="_blank" rel="noreferrer">
               Check the program
             </a>
           </CardContainer>
@@ -75,7 +75,7 @@ export const WorkContent = ({ id }: { id?: string }) => {
                 using Angular and .Net.
               </p>
             </CardDescription>
-            <a href="https://www.ecosistemas.com.br/">Check company website</a>
+            <a href="https://www.ecosistemas.com.br/" target="_blank" rel="noreferrer">Check company website</a>
           </CardContainer>
         </Card>
       </Works>
