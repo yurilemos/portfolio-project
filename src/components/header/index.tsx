@@ -16,10 +16,10 @@ export const Header = () => {
       <HeaderTitle>My.portfolio</HeaderTitle>
 
       <LinksContent>
-        <Link to="/">Feedback</Link>
+        {/* <Link to="/">Feedback</Link> */}
         <button onClick={() => scrollToSection("experience")}>Experience</button>
         <button onClick={() => scrollToSection("projects")}>Projects</button>
-        <Link to="/">About me</Link>
+        {/* <Link to="/">About me</Link> */}
       </LinksContent>
     </HeaderContent>
   );
