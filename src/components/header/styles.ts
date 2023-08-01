@@ -69,7 +69,7 @@ export const LinksContent = styled.div`
 `;
 
 export const SubMenu = styled.div<SubMenuProps>`
-  display: ${({ isopen }) => (isopen === 'true' ? "flex" : "none")};
+  display: ${({ isopen }) => (isopen === "true" ? "flex" : "none")};
   position: absolute;
   top: 100%;
   right: 0;
@@ -80,10 +80,7 @@ export const SubMenu = styled.div<SubMenuProps>`
   color: black;
   z-index: 5;
   align-items: baseline;
-`;
-
-export const SubMenuItem = styled.div`
-  padding: 0.5rem;  
+  transition: display 0.3s ease;
 `;
 
 

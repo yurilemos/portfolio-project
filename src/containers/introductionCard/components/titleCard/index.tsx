@@ -24,6 +24,7 @@ interface PropsDescription {
   descriptions: string[];
   id?: string;
 }
+const publicUrl = process.env.PUBLIC_URL;
 
 export const TitleCard = ({
   name,
@@ -34,7 +35,7 @@ export const TitleCard = ({
   id
 }: PropsTitle) => {
   const personaRef = useRef<LottieRefCurrentProps>(null);
-
+  
   return (
     <Content id={id}>
     <Card>
@@ -50,8 +51,7 @@ export const TitleCard = ({
           style={{ width: "300px" }}
           className="persona-animation"
           lottieRef={personaRef}
-          onComplete={() => {
-            console.log("complete");
+          onComplete={() => {            
             personaRef.current?.goToAndPlay(15);
           }}
           loop={false}
@@ -59,17 +59,13 @@ export const TitleCard = ({
 
         <LinkContent>
           <a href={githubLink} target="_blank" rel="noreferrer">
-            <img src="images/github-icon.svg" alt="github" />
+            <img src={`${publicUrl}/images/github-icon.svg`} alt="github" />
           </a>
-          <LinkedInImg href={linkedInLink} target="_blank" rel="noreferrer">
-            <img src="images/linkedIn-icon.svg" alt="linkedIn" />
-          </LinkedInImg>
-          <a
-            href={`mailto:${email}subject=About the portfolio`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="images/mail-icon.svg" alt="email" />
+        <LinkedInImg href={linkedInLink} target="_blank" rel="noreferrer">
+            <img src={`${publicUrl}/images/linkedIn-icon.svg`} alt="linkedIn" />
+        </LinkedInImg>
+          <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
+            <img src={`${publicUrl}/images/mail-icon.svg`} alt="email" />
           </a>
         </LinkContent>
       </CardContainerTitle>
