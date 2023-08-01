@@ -1,6 +1,6 @@
 export const userInfo = {
   name: "Yuri",
-  descriptions: ["And I am a web developer", "and a computer science major"],
+  descriptions: ["I am a web developer", "and a computer science major"],
   linkedInLink: "https://www.linkedin.com/in/yuri-lemos-30495a191/",
   githubLink: "https://github.com/yurilemos",
   email: "yurilemos98@hotmail.com",
