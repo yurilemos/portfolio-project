@@ -1,5 +1,5 @@
 import React from "react";
-import { Content, TechnologiesContent } from "./styles";
+import { Content, TechnologiesContent, TechnologiesItem } from "./styles";
 import ProgressBar from "../../../../components/progressBar";
 
 interface Props {
@@ -13,11 +13,13 @@ export const TechnologiesContainer = ({ skills, id }: Props) => {
       <h2>Technologies</h2>
       <TechnologiesContent>
         {skills?.map((skill) => (
-          <ProgressBar
-            key={skill.name}
-            name={skill.name}
-            progress={skill.progress}
-          />
+          <TechnologiesItem>
+            <ProgressBar
+              key={skill.name}
+              name={skill.name}
+              progress={skill.progress}
+            />
+          </TechnologiesItem>
         ))}
       </TechnologiesContent>
     </Content>

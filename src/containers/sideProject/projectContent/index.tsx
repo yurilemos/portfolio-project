@@ -17,6 +17,57 @@ export const ProjectContent = ({ id }: { id?: string }) => {
         <Card>
           <CardContent>
             <CardDescription>
+              <h3>Guess Game project</h3>
+              <p>To deepen my understanding of mobile development, I concurrently studied and created a basic game using the React Native framework.</p>
+            </CardDescription>
+            <ButtonContainer>
+              <AnchorButton
+                href="https://github.com/yurilemos/GuessGame"
+                variant="outlined"
+                style={{ maxWidth: '156.5px'}}
+              >
+                Access the git repository
+              </AnchorButton>
+            </ButtonContainer>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <CardDescription>
+              <h3>Restaurant project</h3>
+              <p>To strengthen my grasp of Next.js, I built a restaurant search web application. I plan to enhance and integrate it into upcoming projects to deepen my proficiency in the framework.</p>
+            </CardDescription>
+            <ButtonContainer>
+              <AnchorButton
+                href="https://github.com/yurilemos/restaurant-project"
+                variant="outlined"
+                style={{ maxWidth: '156.5px'}}
+              >
+                Access the git repository
+              </AnchorButton>
+            </ButtonContainer>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <CardDescription>
+              <h3>AI project</h3>
+              <p>To learn Next.js, I completed a coding course and worked on an AI project as part of the practical application of the framework.</p>
+            </CardDescription>
+            <ButtonContainer>
+              <AnchorButton
+                href="https://github.com/yurilemos/ai-project"
+                variant="outlined"
+                style={{ maxWidth: '156.5px'}}
+              >
+                Access the git repository
+              </AnchorButton>
+            </ButtonContainer>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent>
+            <CardDescription>
               <h3>This portfolio</h3>
               <p>I developed a portfolio to showcase my future projects.</p>
             </CardDescription>

@@ -16,8 +16,9 @@ export const CardList = styled.div`
   gap: 2rem;
   flex-wrap: wrap;
   & > div {
-    max-width: 465px;
+    max-width: 500px;
   }
+  justify-content: space-between;
 `;
 
 export const CardContent = styled.div`

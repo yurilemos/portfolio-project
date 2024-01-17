@@ -11,6 +11,10 @@ export const Works = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
+  
 `;
 
 export const CardContainer = styled.div`
